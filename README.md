@@ -12,7 +12,7 @@ A simple API server to count number of unique emails.
 
 The API consists of a single endpoint which receives data when a user would like to count the number of unique emails in a list.
 
-### Add Usage
+### Check for number of unique emails
 
   *  **method**: POST
   *  **endpoint**: /api/emails/unique
