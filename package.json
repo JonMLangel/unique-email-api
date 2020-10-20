@@ -1,0 +1,18 @@
+{
+  "name": "unique-email-api",
+  "version": "1.0.0",
+  "description": "A simple API that accepts a list of emails and returns the number of unique email addresses.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Jonathon Langel",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "invariant": "^2.2.4",
+    "lodash": "^4.17.20",
+    "underscore": "^1.11.0"
+  }
+}
