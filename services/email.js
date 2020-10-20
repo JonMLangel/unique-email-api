@@ -1,9 +1,9 @@
 "use strict";
 
 const createError = require('http-errors');
-const invariant = require('invariant');
 const _ = require('underscore');
 const IGNORED_EMAIL_VALUES_REGEX = /(?:\.|\+.*)(?=.*?@gmail\.com)/g; 
+
 /**
  * Returns array of emails that have been transformed to remove characters that we will ignore
  * 
@@ -34,7 +34,7 @@ const countUnique = (array) => {
  * 
  * @param {Array} emails a list of emails
  */
-const filterUniqueEmails = async (emails) => {
+const filterUniqueEmails = (emails) => {
   let uniqueEmailCount = 0;
   if (!_.isNull(emails) && !_.isUndefined(emails)) {
     let emailLength = emails.length;

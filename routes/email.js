@@ -16,7 +16,9 @@ router.post("/api/emails/unique", async (req, res, next) => {
       throw new createError(400, error);
     }
 
-    const uniqueEmailResponse = await EmailService.filterUniqueEmails(req.body.emails);
+    const uniqueEmailResponse = {
+        uniqueEmailAddressCount: EmailService.filterUniqueEmails(req.body.emails)
+    }
     
     res.json(uniqueEmailResponse);
   } catch (error) {
